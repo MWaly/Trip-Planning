@@ -50,7 +50,9 @@ static GEController *appController = nil;
 		GEPlace *appModel = [self convertJSONtoAppModel:locJSONObject];
 		[arrayOfPlaces addObject:appModel];
 	}
-	[[NSNotificationCenter defaultCenter] postNotificationName:GEVCDidRetrieveLocations object:nil userInfo:@{ @"value":arrayOfPlaces }];
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc]initWithKey:@"distanceFromCurrentLocation" ascending:YES];
+   
+	[[NSNotificationCenter defaultCenter] postNotificationName:GEVCDidRetrieveLocations object:nil userInfo:@{ @"value":[arrayOfPlaces sortedArrayUsingDescriptors:@[descriptor]]}];
 }
 
 - (GEPlace *)convertJSONtoAppModel:(GEResults *)jsonObject {
