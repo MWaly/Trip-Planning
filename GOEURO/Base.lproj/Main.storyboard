@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="GEViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1MW-cJ-Aq2"/>
+                        <viewControllerLayoutGuide type="bottom" id="p45-oW-TVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trip Planner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJA-t7-q8l" userLabel="Title Label">
+                                <rect key="frame" x="20" y="9" width="250" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eH-af-Ve8" userLabel="KeyboardAvoidingView" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="5" y="74" width="310" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="line" placeholder="From" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-5h-4jy" userLabel="From textfield">
+                                        <rect key="frame" x="9" y="20" width="257" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="valueChangedForTextfield:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Pd3-7Z-OsS"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="hcC-0l-eYe"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="line" placeholder="To" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZF-KN-o0L" userLabel="To textfield">
+                                        <rect key="frame" x="9" y="81" width="257" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="valueChangedForTextfield:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NGd-we-GNd"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="Dd2-aO-shC"/>
+                                        </connections>
+                                    </textField>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-Sx-tOY" userLabel="AC From">
+                                        <rect key="frame" x="268" y="18" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" red="0.45882356169999999" green="0.46666669849999998" blue="0.47450983520000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </activityIndicatorView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="atC-nv-scF">
+                                        <rect key="frame" x="266" y="87" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" red="0.45882356169999999" green="0.46666669849999998" blue="0.47450983520000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-Rq-KqF">
+                                        <rect key="frame" x="11" y="282" width="287" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.82927139949999995" green="0.257882893" blue="0.32299754330000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.99215692281723022" green="0.99215692281723022" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="    Search" image="3adsa.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DZg-QJ-4HT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51372551918029785" green="0.68627452850341797" blue="0.80784320831298828" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="fromAc" destination="gPx-Sx-tOY" id="RkB-PZ-YoM"/>
+                        <outlet property="fromTextField" destination="5pK-5h-4jy" id="oyX-bb-L7X"/>
+                        <outlet property="toAc" destination="atC-nv-scF" id="Kzm-Pg-vcl"/>
+                        <outlet property="toTextField" destination="iZF-KN-o0L" id="raC-7R-DDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3adsa.png" width="23" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

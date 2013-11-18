@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220458DB05A74D8588322FBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706FCBCC515458E9916A017 /* libPods.a */; };
+		5208D0421837D0820089462C /* 3adsa.png in Resources */ = {isa = PBXBuildFile; fileRef = 5208D0411837D0820089462C /* 3adsa.png */; };
+		529722C31837D63500A941F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529722C21837D63500A941F7 /* CoreLocation.framework */; };
+		529722C61837F8E600A941F7 /* GEAutoCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722C51837F8E600A941F7 /* GEAutoCompleteViewController.m */; };
+		529722C91837FD9A00A941F7 /* GENetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722C81837FD9A00A941F7 /* GENetworkManager.m */; };
+		529722CC1838275900A941F7 /* GENotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722CB1838275900A941F7 /* GENotifications.m */; };
+		529722CF183827AE00A941F7 /* GEController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722CE183827AE00A941F7 /* GEController.m */; };
+		529722D718389C0800A941F7 /* GEResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722D218389C0800A941F7 /* GEResults.m */; };
+		529722D818389C0800A941F7 /* GEAutoCompleteJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722D418389C0800A941F7 /* GEAutoCompleteJSON.m */; };
+		529722D918389C0800A941F7 /* GEGeoPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722D618389C0800A941F7 /* GEGeoPosition.m */; };
+		529722E218389EAD00A941F7 /* GEPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 529722E118389EAD00A941F7 /* GEPlace.m */; };
+		52CF2FAA1836C1CA00817EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FA91836C1CA00817EB2 /* Foundation.framework */; };
+		52CF2FAC1836C1CA00817EB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FAB1836C1CA00817EB2 /* CoreGraphics.framework */; };
+		52CF2FAE1836C1CA00817EB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FAD1836C1CA00817EB2 /* UIKit.framework */; };
+		52CF2FB41836C1CA00817EB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52CF2FB21836C1CA00817EB2 /* InfoPlist.strings */; };
+		52CF2FB61836C1CA00817EB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF2FB51836C1CA00817EB2 /* main.m */; };
+		52CF2FBA1836C1CA00817EB2 /* GEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF2FB91836C1CA00817EB2 /* GEAppDelegate.m */; };
+		52CF2FBD1836C1CA00817EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CF2FBB1836C1CA00817EB2 /* Main.storyboard */; };
+		52CF2FC01836C1CA00817EB2 /* GEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF2FBF1836C1CA00817EB2 /* GEViewController.m */; };
+		52CF2FC21836C1CA00817EB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CF2FC11836C1CA00817EB2 /* Images.xcassets */; };
+		52CF2FC91836C1CA00817EB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FC81836C1CA00817EB2 /* XCTest.framework */; };
+		52CF2FCA1836C1CA00817EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FA91836C1CA00817EB2 /* Foundation.framework */; };
+		52CF2FCB1836C1CA00817EB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CF2FAD1836C1CA00817EB2 /* UIKit.framework */; };
+		52CF2FD31836C1CA00817EB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52CF2FD11836C1CA00817EB2 /* InfoPlist.strings */; };
+		52CF2FD51836C1CA00817EB2 /* GOEUROTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF2FD41836C1CA00817EB2 /* GOEUROTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CF2FCC1836C1CA00817EB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CF2F9E1836C1CA00817EB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CF2FA51836C1CA00817EB2;
+			remoteInfo = GOEURO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2706FCBCC515458E9916A017 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4A950386684042AA5D75FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5208D0401837D0600089462C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		5208D0411837D0820089462C /* 3adsa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3adsa.png; sourceTree = "<group>"; };
+		529722C21837D63500A941F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		529722C41837F8E600A941F7 /* GEAutoCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEAutoCompleteViewController.h; sourceTree = "<group>"; };
+		529722C51837F8E600A941F7 /* GEAutoCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEAutoCompleteViewController.m; sourceTree = "<group>"; };
+		529722C71837FD9A00A941F7 /* GENetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GENetworkManager.h; sourceTree = "<group>"; };
+		529722C81837FD9A00A941F7 /* GENetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GENetworkManager.m; sourceTree = "<group>"; };
+		529722CA1838275900A941F7 /* GENotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GENotifications.h; sourceTree = "<group>"; };
+		529722CB1838275900A941F7 /* GENotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GENotifications.m; sourceTree = "<group>"; };
+		529722CD183827AE00A941F7 /* GEController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEController.h; sourceTree = "<group>"; };
+		529722CE183827AE00A941F7 /* GEController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEController.m; sourceTree = "<group>"; };
+		529722D018389C0800A941F7 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
+		529722D118389C0800A941F7 /* GEResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEResults.h; sourceTree = "<group>"; };
+		529722D218389C0800A941F7 /* GEResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEResults.m; sourceTree = "<group>"; };
+		529722D318389C0800A941F7 /* GEAutoCompleteJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEAutoCompleteJSON.h; sourceTree = "<group>"; };
+		529722D418389C0800A941F7 /* GEAutoCompleteJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEAutoCompleteJSON.m; sourceTree = "<group>"; };
+		529722D518389C0800A941F7 /* GEGeoPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEGeoPosition.h; sourceTree = "<group>"; };
+		529722D618389C0800A941F7 /* GEGeoPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEGeoPosition.m; sourceTree = "<group>"; };
+		529722DF18389CC000A941F7 /* GEHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEHeaders.h; sourceTree = "<group>"; };
+		529722E018389EAD00A941F7 /* GEPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEPlace.h; sourceTree = "<group>"; };
+		529722E118389EAD00A941F7 /* GEPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEPlace.m; sourceTree = "<group>"; };
+		52CF2FA61836C1CA00817EB2 /* GOEURO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOEURO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CF2FA91836C1CA00817EB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52CF2FAB1836C1CA00817EB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52CF2FAD1836C1CA00817EB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52CF2FB11836C1CA00817EB2 /* GOEURO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOEURO-Info.plist"; sourceTree = "<group>"; };
+		52CF2FB31836C1CA00817EB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52CF2FB51836C1CA00817EB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52CF2FB71836C1CA00817EB2 /* GOEURO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GOEURO-Prefix.pch"; sourceTree = "<group>"; };
+		52CF2FB81836C1CA00817EB2 /* GEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEAppDelegate.h; sourceTree = "<group>"; };
+		52CF2FB91836C1CA00817EB2 /* GEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEAppDelegate.m; sourceTree = "<group>"; };
+		52CF2FBC1836C1CA00817EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52CF2FBE1836C1CA00817EB2 /* GEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEViewController.h; sourceTree = "<group>"; };
+		52CF2FBF1836C1CA00817EB2 /* GEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEViewController.m; sourceTree = "<group>"; };
+		52CF2FC11836C1CA00817EB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		52CF2FC71836C1CA00817EB2 /* GOEUROTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOEUROTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CF2FC81836C1CA00817EB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52CF2FD01836C1CA00817EB2 /* GOEUROTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOEUROTests-Info.plist"; sourceTree = "<group>"; };
+		52CF2FD21836C1CA00817EB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52CF2FD41836C1CA00817EB2 /* GOEUROTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOEUROTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CF2FA31836C1CA00817EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529722C31837D63500A941F7 /* CoreLocation.framework in Frameworks */,
+				52CF2FAC1836C1CA00817EB2 /* CoreGraphics.framework in Frameworks */,
+				52CF2FAE1836C1CA00817EB2 /* UIKit.framework in Frameworks */,
+				52CF2FAA1836C1CA00817EB2 /* Foundation.framework in Frameworks */,
+				220458DB05A74D8588322FBE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CF2FC41836C1CA00817EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CF2FC91836C1CA00817EB2 /* XCTest.framework in Frameworks */,
+				52CF2FCB1836C1CA00817EB2 /* UIKit.framework in Frameworks */,
+				52CF2FCA1836C1CA00817EB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5208D0431837D08D0089462C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FBE1836C1CA00817EB2 /* GEViewController.h */,
+				52CF2FBF1836C1CA00817EB2 /* GEViewController.m */,
+				529722C41837F8E600A941F7 /* GEAutoCompleteViewController.h */,
+				529722C51837F8E600A941F7 /* GEAutoCompleteViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5208D0441837D0990089462C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				529722DB18389C2300A941F7 /* App Delegate */,
+				529722DD18389C5600A941F7 /* Helpers */,
+				529722DC18389C3300A941F7 /* Mediators  */,
+				529722DF18389CC000A941F7 /* GEHeaders.h */,
+				529722E018389EAD00A941F7 /* GEPlace.h */,
+				529722E118389EAD00A941F7 /* GEPlace.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		529722DA18389C1400A941F7 /* JSON Models */ = {
+			isa = PBXGroup;
+			children = (
+				529722D018389C0800A941F7 /* DataModels.h */,
+				529722D118389C0800A941F7 /* GEResults.h */,
+				529722D218389C0800A941F7 /* GEResults.m */,
+				529722D318389C0800A941F7 /* GEAutoCompleteJSON.h */,
+				529722D418389C0800A941F7 /* GEAutoCompleteJSON.m */,
+				529722D518389C0800A941F7 /* GEGeoPosition.h */,
+				529722D618389C0800A941F7 /* GEGeoPosition.m */,
+			);
+			name = "JSON Models";
+			sourceTree = "<group>";
+		};
+		529722DB18389C2300A941F7 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FB81836C1CA00817EB2 /* GEAppDelegate.h */,
+				52CF2FB91836C1CA00817EB2 /* GEAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		529722DC18389C3300A941F7 /* Mediators  */ = {
+			isa = PBXGroup;
+			children = (
+				529722C71837FD9A00A941F7 /* GENetworkManager.h */,
+				529722C81837FD9A00A941F7 /* GENetworkManager.m */,
+				529722CD183827AE00A941F7 /* GEController.h */,
+				529722CE183827AE00A941F7 /* GEController.m */,
+			);
+			name = "Mediators ";
+			sourceTree = "<group>";
+		};
+		529722DD18389C5600A941F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				529722DA18389C1400A941F7 /* JSON Models */,
+				5208D0401837D0600089462C /* Constants.h */,
+				529722CA1838275900A941F7 /* GENotifications.h */,
+				529722CB1838275900A941F7 /* GENotifications.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		529722DE18389C7900A941F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FBB1836C1CA00817EB2 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		52CF2F9D1836C1CA00817EB2 = {
+			isa = PBXGroup;
+			children = (
+				52CF2FAF1836C1CA00817EB2 /* GOEURO */,
+				52CF2FCE1836C1CA00817EB2 /* GOEUROTests */,
+				52CF2FA81836C1CA00817EB2 /* Frameworks */,
+				52CF2FA71836C1CA00817EB2 /* Products */,
+				4A4A950386684042AA5D75FB /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		52CF2FA71836C1CA00817EB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FA61836C1CA00817EB2 /* GOEURO.app */,
+				52CF2FC71836C1CA00817EB2 /* GOEUROTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CF2FA81836C1CA00817EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				529722C21837D63500A941F7 /* CoreLocation.framework */,
+				52CF2FA91836C1CA00817EB2 /* Foundation.framework */,
+				52CF2FAB1836C1CA00817EB2 /* CoreGraphics.framework */,
+				52CF2FAD1836C1CA00817EB2 /* UIKit.framework */,
+				52CF2FC81836C1CA00817EB2 /* XCTest.framework */,
+				2706FCBCC515458E9916A017 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CF2FAF1836C1CA00817EB2 /* GOEURO */ = {
+			isa = PBXGroup;
+			children = (
+				529722DE18389C7900A941F7 /* View */,
+				5208D0441837D0990089462C /* Model */,
+				5208D0431837D08D0089462C /* Controllers */,
+				52CF2FC11836C1CA00817EB2 /* Images.xcassets */,
+				5208D0411837D0820089462C /* 3adsa.png */,
+				52CF2FB01836C1CA00817EB2 /* Supporting Files */,
+			);
+			path = GOEURO;
+			sourceTree = "<group>";
+		};
+		52CF2FB01836C1CA00817EB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FB11836C1CA00817EB2 /* GOEURO-Info.plist */,
+				52CF2FB21836C1CA00817EB2 /* InfoPlist.strings */,
+				52CF2FB51836C1CA00817EB2 /* main.m */,
+				52CF2FB71836C1CA00817EB2 /* GOEURO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52CF2FCE1836C1CA00817EB2 /* GOEUROTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FD41836C1CA00817EB2 /* GOEUROTests.m */,
+				52CF2FCF1836C1CA00817EB2 /* Supporting Files */,
+			);
+			path = GOEUROTests;
+			sourceTree = "<group>";
+		};
+		52CF2FCF1836C1CA00817EB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CF2FD01836C1CA00817EB2 /* GOEUROTests-Info.plist */,
+				52CF2FD11836C1CA00817EB2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CF2FA51836C1CA00817EB2 /* GOEURO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CF2FD81836C1CA00817EB2 /* Build configuration list for PBXNativeTarget "GOEURO" */;
+			buildPhases = (
+				EC730C5DBE4F49769DC41CDE /* Check Pods Manifest.lock */,
+				52CF2FA21836C1CA00817EB2 /* Sources */,
+				52CF2FA31836C1CA00817EB2 /* Frameworks */,
+				52CF2FA41836C1CA00817EB2 /* Resources */,
+				92A520FF578A4360B6F5ACEE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOEURO;
+			productName = GOEURO;
+			productReference = 52CF2FA61836C1CA00817EB2 /* GOEURO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52CF2FC61836C1CA00817EB2 /* GOEUROTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CF2FDB1836C1CA00817EB2 /* Build configuration list for PBXNativeTarget "GOEUROTests" */;
+			buildPhases = (
+				52CF2FC31836C1CA00817EB2 /* Sources */,
+				52CF2FC41836C1CA00817EB2 /* Frameworks */,
+				52CF2FC51836C1CA00817EB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CF2FCD1836C1CA00817EB2 /* PBXTargetDependency */,
+			);
+			name = GOEUROTests;
+			productName = GOEUROTests;
+			productReference = 52CF2FC71836C1CA00817EB2 /* GOEUROTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CF2F9E1836C1CA00817EB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GE;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = MOKH;
+				TargetAttributes = {
+					52CF2FC61836C1CA00817EB2 = {
+						TestTargetID = 52CF2FA51836C1CA00817EB2;
+					};
+				};
+			};
+			buildConfigurationList = 52CF2FA11836C1CA00817EB2 /* Build configuration list for PBXProject "GOEURO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CF2F9D1836C1CA00817EB2;
+			productRefGroup = 52CF2FA71836C1CA00817EB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CF2FA51836C1CA00817EB2 /* GOEURO */,
+				52CF2FC61836C1CA00817EB2 /* GOEUROTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CF2FA41836C1CA00817EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5208D0421837D0820089462C /* 3adsa.png in Resources */,
+				52CF2FC21836C1CA00817EB2 /* Images.xcassets in Resources */,
+				52CF2FB41836C1CA00817EB2 /* InfoPlist.strings in Resources */,
+				52CF2FBD1836C1CA00817EB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CF2FC51836C1CA00817EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CF2FD31836C1CA00817EB2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92A520FF578A4360B6F5ACEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC730C5DBE4F49769DC41CDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CF2FA21836C1CA00817EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CF2FBA1836C1CA00817EB2 /* GEAppDelegate.m in Sources */,
+				52CF2FC01836C1CA00817EB2 /* GEViewController.m in Sources */,
+				529722C61837F8E600A941F7 /* GEAutoCompleteViewController.m in Sources */,
+				529722CC1838275900A941F7 /* GENotifications.m in Sources */,
+				529722D918389C0800A941F7 /* GEGeoPosition.m in Sources */,
+				529722D718389C0800A941F7 /* GEResults.m in Sources */,
+				529722E218389EAD00A941F7 /* GEPlace.m in Sources */,
+				529722CF183827AE00A941F7 /* GEController.m in Sources */,
+				529722C91837FD9A00A941F7 /* GENetworkManager.m in Sources */,
+				529722D818389C0800A941F7 /* GEAutoCompleteJSON.m in Sources */,
+				52CF2FB61836C1CA00817EB2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CF2FC31836C1CA00817EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CF2FD51836C1CA00817EB2 /* GOEUROTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CF2FCD1836C1CA00817EB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CF2FA51836C1CA00817EB2 /* GOEURO */;
+			targetProxy = 52CF2FCC1836C1CA00817EB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52CF2FB21836C1CA00817EB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CF2FB31836C1CA00817EB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52CF2FBB1836C1CA00817EB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CF2FBC1836C1CA00817EB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52CF2FD11836C1CA00817EB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CF2FD21836C1CA00817EB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CF2FD61836C1CA00817EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52CF2FD71836C1CA00817EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CF2FD91836C1CA00817EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4A950386684042AA5D75FB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOEURO/GOEURO-Prefix.pch";
+				INFOPLIST_FILE = "GOEURO/GOEURO-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52CF2FDA1836C1CA00817EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A4A950386684042AA5D75FB /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOEURO/GOEURO-Prefix.pch";
+				INFOPLIST_FILE = "GOEURO/GOEURO-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		52CF2FDC1836C1CA00817EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GOEURO.app/GOEURO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOEURO/GOEURO-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GOEUROTests/GOEUROTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		52CF2FDD1836C1CA00817EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GOEURO.app/GOEURO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GOEURO/GOEURO-Prefix.pch";
+				INFOPLIST_FILE = "GOEUROTests/GOEUROTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CF2FA11836C1CA00817EB2 /* Build configuration list for PBXProject "GOEURO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CF2FD61836C1CA00817EB2 /* Debug */,
+				52CF2FD71836C1CA00817EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CF2FD81836C1CA00817EB2 /* Build configuration list for PBXNativeTarget "GOEURO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CF2FD91836C1CA00817EB2 /* Debug */,
+				52CF2FDA1836C1CA00817EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CF2FDB1836C1CA00817EB2 /* Build configuration list for PBXNativeTarget "GOEUROTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CF2FDC1836C1CA00817EB2 /* Debug */,
+				52CF2FDD1836C1CA00817EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CF2F9E1836C1CA00817EB2 /* Project object */;
+}
