@@ -10,9 +10,9 @@
 
 @interface GEPlace : NSObject
 
-@property (nonatomic,strong) NSNumber *lng;
-@property (nonatomic,strong) NSNumber *lat;
-@property (nonatomic,strong) NSNumber *distanceFromCurrentLocation;
-@property (nonatomic,strong  ) NSString *placeName;
+@property (nonatomic, strong) NSNumber *lng;
+@property (nonatomic, strong) NSNumber *lat;
+@property (nonatomic, strong) NSNumber *distanceFromCurrentLocation;
+@property (nonatomic, strong) NSString *placeName;
 
 @end

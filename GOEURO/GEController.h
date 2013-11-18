@@ -20,17 +20,17 @@
 
 // Convert Methods
 
-+ (double)distanceFromCurrentLocation:(GEPlace*)newLocation andCurrentLocation:(CLLocation*)currentLocation;
++ (double)distanceFromCurrentLocation:(GEPlace *)newLocation andCurrentLocation:(CLLocation *)currentLocation;
 /**
  * Retrieval Method
  */
 
-- (void) getNearbyList :(NSString*)keyword;
+- (void)getNearbyList:(NSString *)keyword;
 
 
 /**
  *  Stored current location for distance purposes
  */
-@property (nonatomic,strong) CLLocation* currentLocation;
+@property (nonatomic, strong) CLLocation *currentLocation;
 
 @end

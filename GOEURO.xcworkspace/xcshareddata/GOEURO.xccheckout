@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8246844A-B38C-4F44-9C16-141AA14B5C1A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GOEURO</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>389319AE-2202-437D-A364-5904869F934D</key>
+		<string>https://github.com/MWaly/TripPlanner.git</string>
+		<key>6608CE6F-AF0A-460B-BABC-F23A81EE2CD4</key>
+		<string>https://github.com/MWaly/Trip-Planning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GOEURO.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>389319AE-2202-437D-A364-5904869F934D</key>
+		<string>../GOEURO</string>
+		<key>6608CE6F-AF0A-460B-BABC-F23A81EE2CD4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MWaly/Trip-Planning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6608CE6F-AF0A-460B-BABC-F23A81EE2CD4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6608CE6F-AF0A-460B-BABC-F23A81EE2CD4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GOEURO</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>389319AE-2202-437D-A364-5904869F934D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GOEURO</string>
+		</dict>
+	</array>
+</dict>
+</plist>

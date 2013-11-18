@@ -18,7 +18,7 @@
 @end
 
 
-@interface GEAutoCompleteViewController : UITableViewController<UIGestureRecognizerDelegate>
+@interface GEAutoCompleteViewController : UITableViewController <UIGestureRecognizerDelegate>
 
 
 @property (nonatomic, strong) NSMutableArray *arrayOfNearbyPlaces;

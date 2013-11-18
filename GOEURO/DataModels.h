@@ -5,4 +5,6 @@
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
-#import "GEResults.h"#import "GEGeoPosition.h"#import "GEAutoCompleteJSON.h"
+#import "GEResults.h"
+#import "GEGeoPosition.h"
+#import "GEAutoCompleteJSON.h"

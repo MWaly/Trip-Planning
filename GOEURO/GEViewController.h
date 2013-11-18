@@ -11,7 +11,7 @@
 #import "GEAutoCompleteViewController.h"
 @import CoreLocation;
 
-@interface GEViewController : UIViewController <UITextFieldDelegate, CLLocationManagerDelegate ,WYPopoverControllerDelegate ,autoCompleteDelegate>
+@interface GEViewController : UIViewController <UITextFieldDelegate, CLLocationManagerDelegate, WYPopoverControllerDelegate, autoCompleteDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *fromTextField;
 @property (weak, nonatomic) IBOutlet UITextField *toTextField;

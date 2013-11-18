@@ -16,8 +16,8 @@
 @interface GEViewController ()
 
 
-@property (nonatomic,strong) WYPopoverController *popover;
-@property (nonatomic,strong) GEAutoCompleteViewController *autoController;
+@property (nonatomic, strong) WYPopoverController *popover;
+@property (nonatomic, strong) GEAutoCompleteViewController *autoController;
 
 /**
  *  Initialization method to get current location of user as a default value for the "TO" textfield
@@ -32,11 +32,13 @@ UITextField *currentTextField;
 	/**
 	 *  Get the current location and make it the default value for the FROM textfield
 	 */
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRetrieveLocations:) name:GEVCDidRetrieveLocations object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRetrieveLocations:) name:GEVCDidRetrieveLocations object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRetrieveLocationsError:) name:GEVCDidRetrieveLocationsError object:nil];
 	[self setupGeocoding];
-    _autoController=[[GEAutoCompleteViewController alloc]initWithStyle:UITableViewStylePlain];
-    _autoController.autoCompleteDelegate=self;
-    _popover=[[WYPopoverController alloc]initWithContentViewController:_autoController];
+	_autoController = [[GEAutoCompleteViewController alloc]initWithStyle:UITableViewStylePlain];
+	_autoController.autoCompleteDelegate = self;
+	_popover = [[WYPopoverController alloc]initWithContentViewController:_autoController];
+	_popover.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,19 +51,17 @@ UITextField *currentTextField;
 	[alertView show];
 }
 
-
-
-#pragma mark - Geocoding stuff
+#pragma mark - Geocoding stuff -
 
 - (void)setupGeocoding {
 	CLLocationManager *locationManager = [[CLLocationManager alloc]init];
-    [_fromAc startAnimating];
+	[_fromAc startAnimating];
 	locationManager.delegate = self;
     
 	[locationManager startUpdatingLocation];
-    [[GEController appController] setValue:locationManager.location forKey:@"currentLocation"];
+	[[GEController appController] setValue:locationManager.location forKey:@"currentLocation"];
 	CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-   
+    
 	[geocoder reverseGeocodeLocation:locationManager.location
 	               completionHandler: ^(NSArray *placemarks, NSError *error) {
                        [_fromAc stopAnimating];
@@ -72,81 +72,93 @@ UITextField *currentTextField;
                        }
                        if (placemarks.count > 0) {
                            CLPlacemark *placeMark = [placemarks firstObject];
-                           _fromTextField.text =[NSString stringWithFormat:@"%@,%@",placeMark.administrativeArea,placeMark.country];
+                           _fromTextField.text = [NSString stringWithFormat:@"%@,%@", placeMark.administrativeArea, placeMark.country];
                        }
                        else
-                       _fromTextField.text = @"";
-                      
+                           _fromTextField.text = @"";
                    }];
 }
 
 #pragma mark - Textfield Stuff -
 
-- (void)startSearching:(UITextField *)textField
-{
-    
+- (void)startSearching:(UITextField *)textField {
 	if (textField == _toTextField)
-     [_toAc startAnimating];
-   else
-    [_fromAc startAnimating];
+		[_toAc startAnimating];
+	else
+		[_fromAc startAnimating];
     
-    [[GEController appController] getNearbyList:textField.text];
-  
+	[[GEController appController] getNearbyList:textField.text];
 }
 
-- (IBAction)valueChangedForTextfield:(UITextField *)sender
-{
-    [self startSearching:sender];
-    // Making sure that popover is visible
-    if (![_popover isPopoverVisible] && [_autoController.arrayOfNearbyPlaces count]>0)
-    {
-         [_popover presentPopoverFromRect:currentTextField.frame inView:sender.superview permittedArrowDirections:WYPopoverArrowDirectionAny animated:YES];
+- (IBAction)valueChangedForTextfield:(UITextField *)sender {
+	[self startSearching:sender];
+	// Making sure that popover is visible
+	if (![_popover isPopoverVisible] && [_autoController.arrayOfNearbyPlaces count] > 0) {
+		[_popover presentPopoverFromRect:currentTextField.frame inView:sender.superview permittedArrowDirections:WYPopoverArrowDirectionAny animated:YES];
+	}
+	if ([sender.text length] <= 1) {
+		[_popover dismissPopoverAnimated:YES];
+	}
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+	currentTextField = textField;
+	if ([textField.text length]>1) {
+        [self startSearching:textField];
+	}
+    else{
+        [_autoController.arrayOfNearbyPlaces removeAllObjects];
+        [_autoController.tableView reloadData];
     }
-    if ([sender.text length]==0) {
-        [_popover dismissPopoverAnimated:YES];
-    }
+	[_popover presentPopoverFromRect:textField.frame inView:textField.superview permittedArrowDirections:WYPopoverArrowDirectionAny animated:YES];
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    currentTextField=textField;
-
-    [_popover presentPopoverFromRect:currentTextField.frame inView:textField.superview permittedArrowDirections:WYPopoverArrowDirectionAny animated:YES];
-}
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    [currentTextField resignFirstResponder];
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+	[currentTextField resignFirstResponder];
 }
 
 #pragma mark - Handling Locations Updates -
 
-- (void)didRetrieveLocations:(NSNotification*)notif
-{
-    NSArray *arrayOfSuggestedPlaces= [[notif userInfo] objectForKey:@"value"];
-    [_autoController.arrayOfNearbyPlaces setArray:arrayOfSuggestedPlaces];
-    [_autoController.tableView reloadData];
-    NSLog(@"The retrieved array are %@",arrayOfSuggestedPlaces);
-    [_toAc stopAnimating];
-    [_fromAc stopAnimating];
-
+- (void)didRetrieveLocations:(NSNotification *)notif {
+	NSArray *arrayOfSuggestedPlaces = [[notif userInfo] objectForKey:@"value"];
+	[_autoController.arrayOfNearbyPlaces setArray:arrayOfSuggestedPlaces];
+	[_autoController.tableView reloadData];
+	NSLog(@"The retrieved array are %@", arrayOfSuggestedPlaces);
+	[_toAc stopAnimating];
+	[_fromAc stopAnimating];
 }
 
+- (void)didRetrieveLocationsError:(NSNotification *)notif {
+	//No actual handling currently
+	[_autoController.tableView reloadData];
+	[_toAc stopAnimating];
+	[_fromAc stopAnimating];
+}
 
 #pragma mark - Auto complete Delegate -
-- (void)neabryPlaceSelected:(NSString *)nearby
-{
-    currentTextField.text=nearby;
-}
-- (void)removeList:(BOOL)actionValue
-{
-    [_autoController.arrayOfNearbyPlaces removeAllObjects];
-    [_autoController.tableView reloadData];
-    [_popover dismissPopoverAnimated:YES];
+- (void)neabryPlaceSelected:(NSString *)nearby {
+	currentTextField.text = nearby;
 }
 
-- (void)focusOnTable:(BOOL)actionValue
-{
-    [currentTextField resignFirstResponder];
+- (void)removeList:(BOOL)actionValue {
+	[_autoController.arrayOfNearbyPlaces removeAllObjects];
+	[_autoController.tableView reloadData];
+	[_popover dismissPopoverAnimated:YES];
+}
+
+- (void)focusOnTable:(BOOL)actionValue {
+	[currentTextField resignFirstResponder];
+}
+
+#pragma mark - Popover delegate -
+
+- (void)popoverControllerDidDismissPopover:(WYPopoverController *)popoverController {
+	//Handling dismissal and cancellation of popover
+	[self removeList:YES];
+}
+
+- (BOOL)popoverControllerShouldDismissPopover:(WYPopoverController *)popoverController {
+	return YES;
 }
 
 @end

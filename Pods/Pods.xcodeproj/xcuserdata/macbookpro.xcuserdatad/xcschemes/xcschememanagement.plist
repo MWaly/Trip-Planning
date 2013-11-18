@@ -9,16 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-PonyDebugger.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SocketRocket.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-TPKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1DF50FD4C71248488089DE09</key>
+		<key>88FBD08A559840398259B774</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>217BD7C89A1049B0BD5A9C16</key>
+		<key>95FE1D38FB4B45E0827D5902</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61018FEF739E4876B6384510</key>
+		<key>BFBF67B87E4042A5B5C82CBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E7685DCE5AF4521BC0176BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A1AC80279BD44EF91F735F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF1FF67B75F042439B950A98</key>
+		<key>EC67A63DA10C4A46BEBB3806</key>
 		<dict>
 			<key>primary</key>
 			<true/>
